@@ -1,0 +1,374 @@
+  @font-face {
+    font-family: "montserrat-eb";
+    src: url("../fonts/Montserrat-ExtraBold.otf");
+  }
+  @font-face {
+    font-family: "montserrat-b";
+    src: url("../fonts/Montserrat-Bold.otf");
+  }
+  @font-face {
+    font-family: "montserrat-sb";
+    src: url("../fonts/Montserrat-SemiBold.otf");
+  }
+  @font-face {
+    font-family: "montserrat-m";
+    src: url("../fonts/Montserrat-Medium.otf");
+  }
+  @font-face {
+    font-family: "montserrat-r";
+    src: url("../fonts/Montserrat-Regular.otf");
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  .row-fluid [class*="span"]{
+    min-height: 0!important;
+  }
+  body{
+    margin: 0;
+  }
+  body *{
+    box-sizing: border-box;
+    outline: none;
+    font-family: arial, sans-serif;
+    font-weight: normal;
+  }
+  
+  ::-webkit-input-placeholder { /* Edge */
+    color: #bfbfbf;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #bfbfbf;
+  }
+  ::placeholder {
+    color: #bfbfbf;
+  }
+  
+  p, 
+  li, 
+  a, 
+  button,
+  input,
+  select,
+  textarea{
+    font-size: 1.041vw;
+    line-height: 1.45;
+  }
+  a{
+    text-decoration: none;
+    color: #176fce;
+  }
+  .row, img{
+    max-width: 100%;
+  }
+  h1, h1 *{
+    font-size: 3.02vw!important;
+    font-family: "montserrat-eb";
+    margin: 0;
+    font-weight: lighter;
+  }
+  h2, h2 *{
+    font-size: 1.40vw!important;
+    font-family: "montserrat-sb";
+    margin: 0;
+  }
+  h3, h3 *{
+    font-size: 1.01vw!important;
+    font-family: "montserrat-m";
+    margin: 0;
+  }
+  h4, h4 *{
+    font-size: 1.06vw!important;
+    font-family: "montserrat-b";
+    margin: 0;
+  }
+  
+  .f16, .f16 *{
+    font-size: 0.83vw!important;
+  }
+  .montserrat-r, .montserrat-r *{
+    font-family: arial, sans-serif;
+    font-weight: normal;
+  }
+  .montserrat-m, .montserrat-m *{
+    font-family: arial, sans-serif;
+  }
+  .montserrat-b, .montserrat-b *{
+    font-family: arial, sans-serif;
+    font-weight: bold;
+  }
+
+  .bold, .bold *, strong{
+    font-family: arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .white, .white *{
+    color: #f4f4f4!important;
+  }
+  .blue, .blue *{
+    color: #0a4270
+    !important;
+  }
+  .bluev2, .bluev2 *{
+    color: #0086a5!important;
+  }
+  .bluev3, .bluev3 *{
+    color: #2a70ca!important;
+  }
+
+  .gris, .gris *{
+    color: #5d5d5d;
+  }
+  .uppercase{
+    text-transform: uppercase;
+  }
+  .margin_0{
+    margin:0;
+  }
+  .margin_t0{
+    margin-top: 0;
+  }
+  .margin_b0{
+    margin-bottom: 0;
+  }
+  .text_center{
+    text-align: center;
+  }
+
+
+  .caja {
+    width: 61.458vw;
+    max-width: 61.458vw;
+    margin: auto;
+  }
+
+  /* Header */
+
+.header {
+    background-color: #0a4270;
+    padding: 1px 0;
+}
+
+.header > .caja {
+  margin: 2.23vw auto;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  list-style: none;
+  margin-right: 2.60vw;
+}
+.menu li:nth-last-child(1){
+  margin-right: 0;
+}
+.menu li a:hover {
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social_media {
+  display: flex; 
+  align-items: center;
+}
+.social_media img:nth-child(1), .social_media img:nth-child(2) {
+  margin-right: 1.45vw;
+}
+
+/* fin del header */
+
+
+/* Slider primera vista */
+
+
+.slide h1{
+  width: 19.88vw;
+  line-height: 1.07;
+  margin-bottom: 1.04vw;
+}
+.slider_p {
+  width: 21.81vw;
+  font-size: 1.56vw;
+  font-family: montserrat-r;
+  font-weight: normal;
+  line-height: 1;
+}
+
+
+.sb {
+  background-image: url('../img/home.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1px 0;
+}
+
+.sb > .caja {
+  margin: 12.34vw auto 6.77vw;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    margin: auto;
+    bottom: 1.19vw;
+    left: 0;
+    right: 0;
+}
+.slick-dots li{
+  list-style: none;
+  margin-right: 0.52vw;
+}
+.slick-dots li button{
+  background-color: #0a4270;
+  color: #0a4270;
+  border: none;
+  border-radius: 50%;
+  width: 0.79vw;
+  height: 0.79vw;
+  font-size: 0.79vw;
+  padding: 0;
+}
+
+/* fin del slider primera vista */
+
+
+/* acerca de nosotros y nuestros productos*/ 
+
+.nosotros {
+  background-color: #f4f4f4;
+  padding: 1px 0;
+}
+
+.about_box {
+  display: flex;
+  align-items: center;
+  margin-top: 3.69vw;
+  margin-bottom: 6.71vw;
+  margin-left: 3vw;
+}
+
+.about_box img {
+  border: 1.4px solid #0086a5; 
+  border-radius: 0.71vw;
+  padding: 0.52vw;
+}
+
+.about {
+  margin-left: 8.07vw;
+}
+
+.about h2 {
+  max-width: 9.16vw;
+  margin-top: 1.45vw;
+  margin-bottom: 1.56vw;
+  line-height: .91;
+}
+
+.about p {
+  font-size: 0.85vw;
+  font-family: montserrat-r;
+  line-height: 1.48;
+  max-width: 23.75vw;
+}
+
+.divider {
+  width: 12.08vw;
+  height: 1px;
+  background-color: #2a70ca;
+  margin-top: 0.67vw;
+}
+
+.nuestros_products {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.40vw 0 2.18vw;
+}
+
+.btn {
+  background-color: #0a4270;
+  color: #f4f4f4;
+  border-radius: 0.35vw;
+  padding: 0.62vw 1.09vw;
+  font-size: .72vw;
+  font-family: montserrat-r;
+  font-weight: normal;
+}
+
+.btn:hover{ 
+  opacity: .8;
+}
+
+.pb_cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+}
+
+.pb_card {
+  max-width: 16.30vw;
+  min-height: 15.05vw;
+  border: 1.4px solid #0086a5;
+  border-radius: 0.71vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pb_card img {
+  margin: 2.08vw 0 1.25vw;
+}
+.pb_card p {
+  margin: 0.83vw 0 1.19vw;
+}
+
+.pb_divider {
+  width: 40.10vw;
+  height: 1px;
+  background-color: #2a70ca;
+  margin: 4.27vw auto 1.97vw;
+}
+/* fin acerca de nosotros y productos */ 
+
+
+/* projects */
+
+.projects {
+  background-color: #0a4270;
+  padding: 1px 0;
+}
+.projects_box {
+  margin: 2.29vw 0 0;
+}
+
+.btn_projects {
+  background-color: #0086a5;
+  color: #f4f4f4;
+  border-radius: 0.35vw;
+  padding: 0.62vw 1.09vw;
+  font-size: .72vw;
+  font-family: montserrat-r;
+  font-weight: normal;
+}
+
+.btn_projects:hover{ 
+  opacity: .8;
+}
+
+
+/* fin projects */
