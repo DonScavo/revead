@@ -186,6 +186,80 @@
   font-weight: bold;
 }
 
+.producto {
+  position: relative;
+}
+
+.producto:hover .sub_menu_producto{
+  transition: all 2s;
+  display: initial;
+}
+
+.sub_menu_producto {
+  display: none;
+  background-color: #f4f4f4;
+  width: 9.32vw;
+  position: absolute;
+  top: 1.4vw;
+  right: 0;
+  left: -1vw;
+  margin: auto;
+  padding: 0 0 .73vw 0;
+  border-bottom-left-radius: 0.71vw;
+  border-bottom-right-radius: 0.71vw;
+  
+}
+.sub_menu_producto li {
+  padding: 0.23vw 0 0.23vw 0.73vw;
+  margin: 0;
+}
+.sub_menu_producto li a {
+  font-size: 0.73vw;
+  font-family: montserrat-m;
+  font-weight: 500;
+}
+.sub_menu_producto li:hover {
+  background-color: #0a4270;
+}
+.sub_menu_producto li:hover a {
+  color: #f4f4f4!important;
+}
+
+.sub_menu_texturado {
+  display: none;
+  background-color: #f4f4f4;
+  width: 9.32vw;
+  position: absolute;
+  top: 0;
+  right: -9.4vw;
+  margin: auto;
+  padding: 0 0 .73vw 0;
+  border-bottom-right-radius: 0.71vw;
+}
+.sub_menu_texturado li {
+  padding: 0.23vw 0 0.23vw 0.73vw;
+  margin: 0;
+}
+.sub_menu_texturado li a {
+  font-size: 0.73vw;
+  font-family: montserrat-m;
+  font-weight: 500;
+}
+.sub_menu_texturado li:hover {
+  background-color: #0a4270;
+}
+.sub_menu_texturado li:hover a {
+  color: #f4f4f4!important;
+}
+.tp {
+  position: relative;
+}
+
+.tp:hover .sub_menu_texturado{
+  transition: all 2s;
+  display: initial;
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -390,6 +464,28 @@
   opacity: .8;
 }
 
+.galerias {
+  display: flex;
+  margin-bottom: 4.74vw;
+}
+.galeria {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.galeria img{
+  border: 1.4px solid #0086a5;
+  border-radius: .71vw;
+}
+.g1 img:nth-child(1), .g3 img:nth-child(1) {
+  margin-bottom: 2.08vw;
+}
+.g2 {
+  margin: 0 1.354vw;
+}
+.g2 img:nth-child(2) {
+  margin: .937vw 0;
+}
 
 /* fin projects */
 
@@ -545,6 +641,11 @@
   font-family: montserrat-b;
   font-weight: bold;
   border: none;
+  cursor: pointer;
+}
+
+.btn_enviar input:hover {
+  opacity: .8;
 }
 
 
