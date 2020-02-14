@@ -18,6 +18,10 @@
     font-family: "montserrat-r";
     src: url("../fonts/Montserrat-Regular.otf");
   }
+  @font-face {
+    font-family: "montserrat-l";
+    src: url("../fonts/Montserrat-Light.otf");
+  }
 
   html {
     scroll-behavior: smooth;
@@ -149,10 +153,18 @@
 .header {
     background-color: #0a4270;
     padding: 1px 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 99999;
 }
 
 .header > .caja {
   margin: 2.23vw auto;
+}
+
+.logo {
+  width: 8.49vw;
 }
 
 .menu {
@@ -184,8 +196,15 @@
   display: flex; 
   align-items: center;
 }
-.social_media img:nth-child(1), .social_media img:nth-child(2) {
+.social_media img {
   margin-right: 1.45vw;
+  width: 1.354vw;
+}
+.social_media a:nth-last-child(1) img {
+  margin-right: 0;
+}
+.social_media a:nth-last-child(2) img {
+  width: .83vw;
 }
 
 /* fin del header */
@@ -309,6 +328,7 @@
   font-size: .72vw;
   font-family: montserrat-r;
   font-weight: normal;
+  border: none;
 }
 
 .btn:hover{ 
@@ -372,3 +392,226 @@
 
 
 /* fin projects */
+
+/* distributor */
+.distributor {
+  background-color: #f4f4f4;
+  padding: 1px 0;
+}
+.distributor_box {
+  margin: 4.79vw 0 0;
+}
+
+.db_socio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.40vw 0 2.18vw;
+}
+.db_socio h2 {
+  max-width: 13.85vw;
+}
+.db_cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+}
+.db_card img {
+  border: 1.4px solid #0086a5;
+  border-radius: .71vw;
+  padding: .46vw;
+  margin-bottom: 1.04vw;
+}
+.db_card p {
+  font-size: 0.96vw
+}
+
+.asesoria {
+  background-color: #e6e6e6;
+  padding: 1px 0;
+}
+.asesoria_box {
+  display: flex;
+
+}
+.ab_pintor{
+  max-width: 50vw;
+  width: 50vw;
+  background-color: #a7c9d5;
+  text-align: right;
+}
+.ab_info {
+  max-width: 23.75vw;
+  margin: 8.80vw 0 7.47vw 3.07vw;
+}
+
+.ab_flex {
+  margin: 1.40vw 0 1.14vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ab_info h2 {
+  max-width: 6.70vw;
+  line-height: 1.19;
+}
+.ab_info p {
+  font-size: 0.85vw;
+  font-family: montserrat-r;
+  font-weight: normal;
+  line-height: 1.48;
+}
+
+.ab_divider {
+    width: 12.08vw;
+    height: 2px;
+    background-color: #0086a5;
+    margin-top: 1.77vw;
+}
+
+/* fin distributor  */
+
+/* contact */
+.contact {
+  background-color: #f4f4f4;
+  padding: 1px 0;
+}
+.contact_box {
+  margin: 5.83vw 0 0;
+}
+.cb_contacto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.40vw 0 1.82vw;
+}
+.cb_contacto h2 {
+  max-width: 14.29vw;
+}
+
+.form_box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6.97vw;
+}
+
+.campo{
+  margin-bottom: 1.40vw;
+}
+.campo input{
+  background-color: #f4f4f4;
+  border: 1.4px solid #0086a5;
+  border-radius: .71vw;
+  padding: 1.14vw 0 1.14vw 1.77vw;
+  max-width: 38.28vw;
+  width: 38.28vw;
+  color: #0086a5;
+  font-size: .88vw;
+  font-family: montserrat-r;
+  font-weight: normal;
+}
+.campo input::placeholder {
+  color: #0086a5;
+  font-size: .88vw;
+  font-family: montserrat-r;
+  font-weight: normal;
+}
+.campo textarea {
+  background-color: #f4f4f4;
+  border: 1.4px solid #0086a5;
+  border-radius: .71vw;
+  padding: 1.14vw 0 1.14vw 1.77vw;
+  max-width: 38.28vw;
+  width: 38.28vw;
+  color: #0086a5;
+  font-size: .88vw;
+  font-family: montserrat-r;
+  font-weight: normal;
+}
+
+.campo textarea::placeholder {
+  color: #0086a5;
+  font-size: .88vw;
+  font-family: montserrat-r;
+  font-weight: normal;
+}
+
+.btn_enviar input {
+  background-color: #0a4270;
+  color: #f4f4f4;
+  border-radius: 0.35vw;
+  padding: .69vw 1.66vw;
+  font-size: 1.09vw;
+  font-family: montserrat-b;
+  font-weight: bold;
+  border: none;
+}
+
+
+.fb_info {
+  max-width: 18.48vw;
+  height: 22.67vw;
+  border-radius: .71vw;
+  border: solid 1.4px #0086a5;
+}
+.fb_info p {
+  max-width: 13.95vw;
+  margin: 2.13vw 2.08vw 3.02vw 1.40vw;
+  font-family: montserrat-l;
+  font-weight: lighter;
+  font-size: .88vw;
+  line-height: 1.09;
+}
+
+
+
+/* fin de contact */
+
+footer {
+  background-color: #0a4270;
+  padding: 1px 0;
+}
+
+.footer_box {
+  margin: 2.60vw 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_box div p {
+  font-family: montserrat-l;
+  font-weight: lighter;
+  font-size: .88vw;
+  line-height: 1.09;
+  margin: 0;
+}
+
+.footer_logo {
+  border-right: 1.4px solid #f4f4f4;
+  padding-right: 2.34vw;
+}
+.footer_logo img {  
+  width: 8.49vw;
+}
+
+.footer_divider {
+  border-right: 1.4px solid #f4f4f4;
+  padding-right: 2.34vw;
+  border-left: 1.4px solid #f4f4f4;
+  padding-left: 2.34vw;
+}
+
+.footer_rs {
+  display: flex;
+  align-items: center;
+  align-self: baseline;
+}
+.footer_rs img {
+  width: 1.35vw;
+  margin-right: 0.98vw;
+}
+.footer_rs a:nth-last-child(1) img{
+  margin-right: 0;
+}
+.footer_rs a:nth-last-child(2) img{
+  width: .83vw;
+}
