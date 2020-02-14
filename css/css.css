@@ -455,6 +455,10 @@
     margin: 1.40vw 0 2.18vw;
   }
 
+  .nuestros_products h2 {
+    max-width: 20.73vw;
+  }
+
   .btn {
     background-color: #0a4270;
     color: #f4f4f4;
@@ -638,6 +642,7 @@
     border-radius: .71vw;
     padding: .46vw;
     margin-bottom: 1.04vw;
+    width: 14.786vw;
   }
 
   .db_card p {
