@@ -890,7 +890,7 @@
       max-width: 90vw;
     }
     .logo {
-      width: initial;
+      width: 30vw;
     }
     #menu_hamburger {
       display: block;
@@ -899,7 +899,7 @@
     .menu {
       flex-direction: column;
       position: absolute;
-      top: 16.1vw;
+      top: 13.1vw;
       right: 0;
       max-height: 0;
       height: 0;
