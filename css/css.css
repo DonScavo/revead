@@ -361,7 +361,7 @@
 
 
   .sb {
-    background-image: url('../img/home.png');
+    background-image: url('../img/1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 1px 0;
@@ -483,7 +483,9 @@
 
   .pb_card {
     max-width: 14.635vw;
+    width: 14.635vw;
     min-height: 15.05vw;
+    height: 15.05vw;
     border: 1.4px solid #0086a5;
     border-radius: 0.71vw;
     display: flex;
@@ -540,6 +542,7 @@
 
   .galerias {
     display: flex;
+    justify-content: center;
     margin-bottom: 4.74vw;
   }
 
@@ -552,6 +555,15 @@
   .galeria img {
     border: 1.4px solid #0086a5;
     border-radius: .71vw;
+    height: inherit;
+    width: 19.01vw;
+  }
+
+  .g1 div {
+    height: 24.79vw;
+  }
+  .g3 div {
+    height: 24.79vw;
   }
 
   .g1 a:nth-child(1),
@@ -562,7 +574,12 @@
   .g2 {
     margin: 0 1.354vw;
   }
-
+  .g2 div {
+    height: 12.5vw;
+  }
+  .g2 a:nth-child(2) div {
+    height: 24.79vw;
+  }
   .g2 a:nth-child(2) {
     margin: .937vw 0;
   }
@@ -573,7 +590,109 @@
   }
 
   .cover::before {
-    content: 'FACHADA';
+    content: 'FACHADAS';
+    color: #f4f4f4;
+    font-family: montserrat-b;
+    font-size: 1.06vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 134, 165, .7);
+    opacity: 0;
+    border-radius: .71vw;
+  }
+  .cover2::before {
+    content: 'HOTELES';
+    color: #f4f4f4;
+    font-family: montserrat-b;
+    font-size: 1.06vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 134, 165, .7);
+    opacity: 0;
+    border-radius: .71vw;
+  }
+  .cover3::before {
+    content: 'CENTRO COMERCIAL';
+    color: #f4f4f4;
+    font-family: montserrat-b;
+    font-size: 1.06vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 134, 165, .7);
+    opacity: 0;
+    border-radius: .71vw;
+  }
+  .cover4::before {
+    content: 'DORMITORIOS';
+    color: #f4f4f4;
+    font-family: montserrat-b;
+    font-size: 1.06vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 134, 165, .7);
+    opacity: 0;
+    border-radius: .71vw;
+  }
+  .cover5::before {
+    content: 'COCINAS';
+    color: #f4f4f4;
+    font-family: montserrat-b;
+    font-size: 1.06vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 134, 165, .7);
+    opacity: 0;
+    border-radius: .71vw;
+  }
+  .cover6::before {
+    content: 'SALAS';
+    color: #f4f4f4;
+    font-family: montserrat-b;
+    font-size: 1.06vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 134, 165, .7);
+    opacity: 0;
+    border-radius: .71vw;
+  }
+  .cover7::before {
+    content: 'PISCINAS';
     color: #f4f4f4;
     font-family: montserrat-b;
     font-size: 1.06vw;
@@ -590,7 +709,14 @@
     border-radius: .71vw;
   }
 
-  .cover:hover::before {
+
+  .cover:hover::before,
+  .cover2:hover::before,
+  .cover3:hover::before,
+  .cover4:hover::before,
+  .cover5:hover::before,
+  .cover6:hover::before,
+  .cover7:hover::before {
     opacity: 1;
     transition: all .5s ease-out;
   }
@@ -669,7 +795,7 @@
 
   .ab_info {
     max-width: 23.75vw;
-    margin: 8.80vw 0 7.47vw 3.07vw;
+    margin: 5vw 0 5vw 3.07vw;
   }
 
   .ab_flex {
@@ -680,7 +806,7 @@
   }
 
   .ab_info h2 {
-    max-width: 6.70vw;
+    max-width: 13.70vw;
     line-height: 1.19;
   }
 
@@ -695,7 +821,7 @@
     width: 12.08vw;
     height: 2px;
     background-color: #0086a5;
-    margin-top: 1.77vw;
+    margin: 1.77vw 0;
   }
 
   /* fin distributor  */
@@ -724,7 +850,6 @@
   .form_box {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 6.97vw;
   }
 
   .campo {
@@ -804,6 +929,10 @@
     line-height: 1.09;
   }
 
+  .mapa {
+    margin: 5vw 0;
+  }
+
 
 
   /* fin de contact */
@@ -867,35 +996,45 @@
   }
 
   @media (max-width: 768px) {
-    h1, h1 * {
+
+    h1,
+    h1 * {
       font-size: 5.5vw !important;
     }
+
     h2,
     h2 * {
       font-size: 5vw !important;
     }
+
     h3,
     h3 * {
       font-size: 3.8vw !important;
     }
+
     h4,
     h4 * {
       font-size: 3vw !important;
     }
+
     .f16 {
       font-size: 2.6vw !important;
     }
-    .header>.caja{
+
+    .header>.caja {
       width: 90vw;
       max-width: 90vw;
     }
+
     .logo {
       width: 30vw;
     }
+
     #menu_hamburger {
       display: block;
       width: 8vw;
     }
+
     .menu {
       flex-direction: column;
       position: absolute;
@@ -908,12 +1047,15 @@
       padding: 0 7vw;
       transition: all 1s;
     }
+
     .menu li {
       margin: 0;
     }
+
     .social_media {
       display: none;
     }
+
     /* .menu_mobile:hover .menu{
       max-height: 50vw;
       transition: all .5s;
@@ -932,6 +1074,7 @@
       width: 34.88vw;
       margin-bottom: 2.04vw;
     }
+
     .slider_p {
       font-size: 2.8vw;
       width: 34vw;
@@ -941,16 +1084,20 @@
       flex-direction: column;
       margin: 6vw 0;
     }
+
     .about_box img {
       width: auto;
     }
+
     .about {
       margin-top: 2.5vw;
       margin-left: 0;
     }
+
     .about h2 {
       max-width: initial;
     }
+
     .about p {
       font-size: 2.6vw;
       max-width: initial;
@@ -968,138 +1115,197 @@
     .pb_cards {
       flex-wrap: wrap;
     }
+
     .pb_card {
       width: 30vw;
       max-width: 30vw;
+      min-height: 37vw;
       margin-bottom: 2vw;
     }
+
     .pb_card img {
       width: 15vw;
     }
+
     .pb_card p {
       font-size: 2.6vw;
     }
+
     .pb_divider {
-      margin: 3.27vw auto 4.97vw;;
+      margin: 3.27vw auto 4.97vw;
+      ;
     }
-    .nuestros_products  {
+
+    .nuestros_products {
       margin: 1.40vw 0 5vw;
     }
+
     .nuestros_products h2 {
       max-width: 30vw;
     }
+
     .projects_box {
       margin: 5vw 0 0;
     }
+
     .galerias {
       margin-bottom: 5vw;
       flex-direction: column;
     }
+    .galeria img {
+      height: unset;
+      width: unset;
+    }
+
     .btn_projects {
       font-size: 3vw;
     }
+
+    .g1 div {
+      height: unset;
+    }
+    .g3 div {
+      height: unset;
+    }
+
     .g2 {
       margin: 5vw 0;
+    }
+    .g2 div {
+      height: unset;
+    }
+    .g2 a:nth-child(2) div {
+      height: unset;
     }
     .g2 a:nth-child(2) {
       margin: 5vw 0;
     }
-    .g1 a:nth-child(1), .g3 a:nth-child(1) {
+
+    .g1 a:nth-child(1),
+    .g3 a:nth-child(1) {
       margin-bottom: 5vw;
     }
-    .db_socio{
+
+    .db_socio {
       margin: 1.40vw 0 5vw;
     }
+
     .db_socio h2 {
       max-width: 30vw;
     }
+
     .db_cards {
       flex-direction: column;
     }
+
     .db_card {
       margin-bottom: 5vw;
     }
+
     .db_card img {
       width: auto;
     }
+
     .db_card p {
       font-size: 2.8vw;
     }
+
     .asesoria_box {
       flex-direction: column;
     }
+
     .ab_pintor {
       width: 100vw;
       max-width: 100vw;
     }
+
     .ab_info {
       max-width: 61.458vw;
       margin: 5vw auto 5vw;
-  }
+    }
+
     .ab_info h2 {
       max-width: 40vw;
-  }
+    }
+
     .ab_flex {
       margin: 1.40vw 0 5vw;
-     }
+    }
+
     .ab_divider {
       width: 30vw;
-     }
-     .cb_contacto {
-       margin: 1.40vw 0 5vw;
-     }
+    }
+
+    .cb_contacto {
+      margin: 1.40vw 0 5vw;
+    }
+
     .cb_contacto h2 {
       max-width: 33vw;
-  }
-    .form_box{
+    }
+
+    .form_box {
       flex-direction: column;
     }
+
     .campo input {
       width: 61vw;
       max-width: 61vw;
       font-size: 2.8vw;
     }
+
     .campo input::placeholder {
       font-size: 2.8vw;
     }
+
     .campo textarea {
       width: 61vw;
       max-width: 61vw;
       font-size: 2.8vw;
     }
+
     .campo textarea::placeholder {
       font-size: 2.8vw;
     }
+
     .btn_enviar {
       margin-bottom: 5vw;
     }
+
     .btn_enviar input {
       font-size: 4vw;
     }
+
     .fb_info {
       max-width: 61vw;
-      height: 53vw; 
+      height: 53vw;
     }
+
     .fb_info p {
       font-size: 2.8vw;
       max-width: 60vw;
     }
+
     .footer_box {
       flex-direction: column;
-      height: 70vw;    
+      height: 70vw;
       justify-content: space-evenly;
     }
+
     .footer_logo {
       border-right: none;
       border-bottom: 1.4px solid #f4f4f4;
       padding-bottom: 2.34vw;
     }
+
     .footer_logo img {
       width: initial;
     }
+
     .footer_box div p {
       font-size: 2.8vw;
     }
+
     .footer_divider {
       border-right: none;
       border-left: none;
@@ -1107,15 +1313,18 @@
       border-bottom: 1.4px solid #f4f4f4;
       padding: 2.34vw 0;
     }
+
     .footer_rs {
       width: 61vw;
       justify-content: space-between;
     }
+
     .footer_rs img {
       width: initial;
     }
+
     .footer_rs a:nth-last-child(2) img {
       width: initial;
     }
-  
+
   }
