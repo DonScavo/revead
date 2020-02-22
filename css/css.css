@@ -330,10 +330,6 @@
     margin-right: 0;
   }
 
-  .social_media a:nth-last-child(2) img {
-    width: .83vw;
-  }
-
   /* fin del header */
 
 
@@ -1043,10 +1039,6 @@
 
   .footer_rs a:nth-last-child(1) img {
     margin-right: 0;
-  }
-
-  .footer_rs a:nth-last-child(2) img {
-    width: .83vw;
   }
 
   #menu_hamburger {
