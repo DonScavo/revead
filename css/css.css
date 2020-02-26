@@ -320,6 +320,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+  }
+  .flex::before {
+    content: url('../img/icono_marca_peru.svg');
+    position: absolute;
+    top: 0.3vw;
+    right: -7vw;
+    width: 4vw;
   }
 
   .social_media {
@@ -421,7 +429,8 @@
   .sb5>.caja,
   .sb6>.caja,
   .sb7>.caja {
-    margin: 12.34vw auto 6.77vw;
+    margin: 20.34vw auto 0;
+    /* 6.77vw */
   }
 
   .slick-dots {
