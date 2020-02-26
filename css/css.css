@@ -1167,7 +1167,9 @@
       top: -2vw;
       right: -63vw;
     }
-
+    .flex::before {
+      display: none;
+    }
 
 
 
