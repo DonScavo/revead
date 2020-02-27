@@ -325,9 +325,9 @@
   .flex::before {
     content: url('../img/icono_marca_peru.svg');
     position: absolute;
-    top: 0.3vw;
-    right: -7vw;
-    width: 4vw;
+    top: 0vw;
+    right: -13vw;
+    width: 10vw;
   }
 
   .social_media {
